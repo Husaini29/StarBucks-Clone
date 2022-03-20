@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    font-family:'Lato',Helvetica,Arial,sans-serif;
+
+}
+:root{
+    --color-primary:#006241;
+    --color-secondary:#d50032;
+    --color-extra:#d4e9e2;
+}
+
+/* ----------Header Starts -------- */
+#header{
+    height: 190px;
+    width: 100%;
+    background-color:  #f7f7f7;
+}
+.head{
+    background-color: var(--color-primary);
+    height: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo img{
+    height: 65px;
+    width: 62px;
+    margin-left: 190%;
+    margin-top: 25%;
+}
+.left{
+    margin-top: 7%;
+    margin-left: 5%;
+}
+.right{
+    padding: 2px 1px;
+    margin-right:6%;
+    margin-top: 1%;
+}
+.nav-options{
+    display: flex;
+}
+.nav-options > li{
+    list-style: none;
+    padding: 10px;
+}
+.nav-options > li:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+}
+.nav-options >li >a{
+    text-decoration: none;
+    color: #252322;
+    font-family:'Lato',Helvetica,Arial,sans-serif;
+}
+.nav-options >li:hover{
+    color: #fff;
+}
+.fa-location-dot{
+    color: var(--color-primary);
+}
+.find:hover{
+    color: #a1a1a1;
+    cursor: pointer;
+}
+/* -------Hoverable DropDown Starts------ */
+
+/* ------CoffeeDropDown Starts------- */
+
+#coffeeDropDown{
+    background-color: #1e1e1e;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 423px;
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5%;
+}
+#coffeeDropDown1{
+    display: inline-block;
+    margin-top: -1%;
+    margin-left: 10%;
+    width: 65%;
+}
+#coffeeDropDown2{
+    float: right;
+    width: 18%;
+    margin-right: 5%;
+}
+
+#coffeeDropDown2 > img{
+    display: block;
+    height: 140px;
+    width: 100%;
+}
+
+#sub-coffeelist{
+    margin-top: -3%;
+}
+.list-heading{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ---------MenuDropDown Starts--------- */
+
+#menuDropDown{
+    background-color: #1e1e1e;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5%;
+}
+
+#menuDropDown1{
+    display: inline-block;
+    margin-top: 0%;
+    margin-left: 10%;
+    width: 65%;
+}
+
+#menuDropDown1 > .list-unstyled{
+    height: 235px;
+}
+
+#menuDropDown2{
+    float: right;
+    width: 19%;
+    margin-right: 2%;
+}
+
+#menuDropDown2 > img{
+    display: block;
+    height: 150px;
+    width: 65%;
+}
+
+/* ------- CoffeeHouse DroDown Stars--------- */
+
+#coffeeHouseDropDown{
+    background-color: #1e1e1e;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5%;
+}
+
+#coffeeHouseDropDown1{
+    display: inline-block;
+    margin-top: 0%;
+    margin-left: 10%;
+    width: 65%;
+}
+
+#coffeeHouseDropDown1 > .list-unstyled{
+    height: 200px;
+}
+
+#coffeeHouseDropDown2{
+    float: right;
+    width: 20%;
+    margin-right: 2%;
+}
+
+#coffeeHouseDropDown2 > img{
+    display: block;
+    height: 125px;
+    width: 80%;
+}
+
+#downloadApp{
+    text-decoration: none;
+    color: white !important
+}
+
+#starbucksApp{
+    z-index: 100;
+    margin-top: -93%;
+    width: 65%;
+    height: 220px;
+    margin-left: 8%;
+}
+
+#starbucksApp:hover{
+    background-color: green;
+}
+
+#starbucksApp > img{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 23%;
+}
+
+#starbucksApp > h6{
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    margin-left: 2.5%;
+}
+
+#starbucksApp > p{
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    margin-left: 2.5%;
+    font-size: 14px;
+}
+
+/* ----------Responsibility DropDown Starts------- */
+
+#responsibilityDropDown{
+    background-color: #1e1e1e;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 305px;
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5%;
+}
+
+#responsibilityDropDown1{
+    display: inline-block;
+    margin-top: 0%;
+    margin-left: 10%;
+    width: 65%;
+}
+
+#responsibilityDropDown1 > .list-unstyled{
+    width: 24%;
+    height: 130px;
+}
+
+#responsibilityDropDown2{
+    float: right;
+    width: 20%;
+    margin-right: 2%;
+}
+
+#responsibilityDropDown2 > img{
+    display: block;
+    height: 101px;
+    width: 70%;
+}
+
+/* -------- About DropDown Starts------------ */
+#aboutUsDropDown{
+    background-color: #1e1e1e;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 170px;
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5%;
+}
+
+#aboutUsDropDown1{
+    display: inline-block;
+    margin-top: 0%;
+    margin-left: 10%;
+    width: 65%;
+}
+
+#aboutUsDropDown1 > .list-unstyled{
+    width: 24%;
+    height: 120px;
+}
+
+#aboutUsDropDown2{
+    float: right;
+    width: 20%;
+    margin-right: 2%;
+}
+
+#aboutUsDropDown2 > img{
+    display: block;
+    height: 170px;
+    width: 70%;
+}
+
+
+
+.list-unstyled{
+    display: inline-block;
+    width: 24%;
+    height: 153px;
+    padding: 3%;
+    vertical-align: top;
+}
+.list-unstyled >li >a{
+    color: #fff !important;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 3%;
+    font-size: 13px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.list-unstyled >li >a:hover{
+    background-color: green !important;
+}
+
+
+/* -------Image Div Starts------- */
+
+
+#box1{
+    height: 560px;
+    width: 100%;
+    background: url("box1.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box2{
+    height: 560px;
+    width: 100%;
+    background: url("box2.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box3{
+    height: 560px;
+    width: 100%;
+    background: url("box3.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box4{
+    height: 560px;
+    width: 100%;
+    background: url("box4.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box5{
+    height: 560px;
+    width: 100%;
+    background: url("box5.png") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box6{
+    height: 560px;
+    width: 100%;
+    background: url("box6.png") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box7{
+    height: 560px;
+    width: 100%;
+    background: url("box7.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box8{
+    height: 560px;
+    width: 100%;
+    background: url("box8.png") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box9{
+    height: 560px;
+    width: 100%;
+    background: url("box9.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box10{
+    height: 560px;
+    width: 100%;
+    background: url("box10.jpg") no-repeat;
+    background-position: cover;
+    background-position-x: center;
+}
+#box11{
+    height: 550px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display:flex;
+}
+#box12{
+    height: 550px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display:flex;
+}
+.left-box{
+    height: 500px;
+    width: 45%;
+    /* border: 2px solid red; */
+    margin-top: 1.5%;
+    margin-left: 4%;
+}
+.right-box{
+    height: 500px;
+    width: 45%;
+    /* border: 2px solid red; */
+    margin-left: 2%;
+    margin-top: 1.5%;
+
+}
+.box-img{
+    margin-left: 16%;
+    margin-top:8%;
+}
+.right-heading{
+    margin-left: 10%;
+    margin-top: 27%;
+    font-size: 22px;
+}
+.right-para{
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.left-heading{
+    margin-left: 15%;
+    margin-top: 27%;
+    font-size: 22px;
+
+}
+.left-para{
+    margin-top: 2%;
+    margin-left: 15%;
+    font-size: 16px;
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+
+/* -----Footer Starts----- */
+
+.footer-top{
+    height:110px;
+    width: 100%;
+    background-color:#f0f0f0;
+}
+.fa-brands{
+    height: 50px;
+    width: 50px;
+    color:#382f2d;
+    font-size: 34px;
+    margin-top: 3%;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    color: #a1a1a1;
+
+}
+.fa-facebook-f{
+    margin-left: 5%;
+}
+.footer-middle{
+    height: 240px;
+    width:54%;
+    display: flex;
+}
+.footer-links{
+    list-style:none;
+    padding: 66px;
+    line-height:2;
+}
+.heading{
+    color: #3d3935 !important;
+    font-weight:bold;
+    font-size: 19px;
+}
+.heading:hover{
+    color: #a1a1a1 !important;
+    cursor: pointer;
+}
+.sub-heading{
+    font-size: 17px;
+}
+.sub-heading:hover{
+    color: #a1a1a1 !important;
+    cursor: pointer;
+} 
+
+#footer-bottom{
+    height: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+.footer-links2{
+    text-decoration: none;
+    color: #3d3935 !important;
+
+}
+.footer-links2:hover{
+    cursor: pointer;
+    color: #a1a1a1 !important;
+}
+
+#footer-bottom2{
+    color: #3d3935 !important;
+    font-size: 12px;
+    line-height: 4;
+}
+
+#footer-img{
+    margin-top: -21%;
+    margin-right: 4%;
+    float: right;
+}
+#footer-img > img{
+    height: 150px;
+}

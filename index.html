@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d7c6a24acb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="head"></div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"></a>
+                <img src="logo.svg" alt="Starbucks">
+            </div>
+            <div class="left">
+                <ul class="nav-options">
+                    <li onmousemove="mouseOverCoffee()" onmouseout="mouseOutCoffee()"> COFFEE</li>
+                    <li onmousemove="mouseOverMenu()" onmouseout="mouseOutMenu()"> MENU</li>
+                    <li onmousemove="mouseOverCoffeeHouse()" onmouseout="mouseOutCoffeeHouse()">COFFEHOUSE</li>
+                    <li onmousemove="mouseOverResponsibility()" onmouseout="mouseOutResponsibility()">RESPONSIBILITY</li>
+                    <li>REWARDS</li>
+                    <li>CARRIER</li>
+                    <li>STARBUCKS SEASON'S GIFTING</li>
+                    <li>STARBUCKS DELIVERY</li>
+                    <li onmousemove="mouseOverAboutUs()" onmouseout="mouseOutAboutUs()">ABOUT US</li>
+                </ul>
+            </div>
+            <div class="right">
+                <p class="find"><i class="fa-solid fa-location-dot"></i> Find A Store</p>
+                <ul class="nav-options">
+                </ul>
+            </div>
+        </nav>
+
+        <!-- --------Hoverable DropDown Starts------- -->
+
+        <!-- ----------CoffeeDropDown Starts---------- -->
+
+        <div class="container-fluid" id="coffeeDropDown" onmousemove="mouseOverCoffee()" onmouseout="mouseOutCoffee()">
+            <div id="coffeeDropDown1">
+                <div class="list-unstyled">
+                    <li><a href="#" class="list-heading">Our Coffees</a></li>
+                    <li><a href="#">Starbucks VIA®</a></li>
+                    <li><a href="#">Whole Bean Coffee</a></li>
+                    <li><a href="#">View All Coffees</a></li>
+                </div>
+
+                <div class="list-unstyled">
+                    <li><a href="#" class="list-heading">Find Your Perfect Coffee</a></li>
+                </div>
+
+                <div class="list-unstyled">
+                    <li><a href="#" class="list-heading">Espresso</a></li>
+                    <li><a href="#">The ingredients</a></li>
+                    <li><a href="#">The Best Equipments</a></li>
+                    <li><a href="#">Who Makes it</a></li>
+                </div>    
+                
+                <div class="list-unstyled">
+                    <li><a href="#" class="list-heading">How To Brew Great Coffee</a></li>
+                    <li><a href="#">Coffee Press</a></li>
+                    <li><a href="#">Pour Over</a></li>
+                    <li><a href="#">Iced Pour Over</a></li>
+                    <li><a href="#">Coffee Brewer</a></li>
+                </div>
+    
+                <div class="list-unstyled" >
+                    <li><a href="#" class="list-heading">Ethical Sourcing</a></li>
+                    <li><a href="#">Coffee</a></li>
+                    <li><a href="#">Coffee Quality</a></li>
+                    <li><a href="#">Farmer Support</a></li>
+                </div>
+    
+                <div class="list-unstyled">
+                    <li><a href="#" class="list-heading">Learn More</a></li>
+                    <li><a href="#">Starbucks Roast Spectrum</a></li>
+                    <li><a href="#">Coffee By Form</a></li>
+                    <li><a href="#">Flavors in Your Cup</a></li>
+                    <li><a href="#">Coffee FAQ</a></li>
+                </div>
+                <hr/>
+    
+                <div class="list-unstyled" id="sub-coffeelist">
+                    <p>Looking for Coffee Beverages?</p>
+                    <li><a href="#">Drinks</a></li>
+                </div>
+            </div>
+
+            <div id="coffeeDropDown2">
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <img src="pattern_stars.png" alt="starsPattern"/>
+            </div>
+        </div>
+
+        <!-- -----------MenuDropDown Starts--------- -->
+
+        <div class="container-fluid" id="menuDropDown" onmousemove="mouseOverMenu()" onmouseout="mouseOutMenu()">
+            <div id="menuDropDown1">
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Drinks</a></li>
+                    <li><a href="#">Featured Beverages</a></li>
+                    <li><a href="#">Espresso</a></li>
+                    <li><a href="#">Freshly Brewed Coffee</a></li>
+                    <li><a href="#">Coffee Frappuccino®</a></li>
+                    <li><a href="#">Crème Frappuccino®</a></li>
+                    <li><a href="#">Other Beverages</a></li>
+                    <li><a href="#">Cold Brew</a></li>
+                    <li><a href="#">Teavana® Tea</a></li>
+                    <li><a href="#">Iced Shaken</a></li>
+                </div>  
+                
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Food</a></li>
+                    <li><a href="#">Featured Food</a></li>
+                    <li><a href="#">Sweet Bakery</a></li>
+                    <li><a href="#">Savoury Bakery</a></li>
+                    <li><a href="#">Sandwiches & wraps</a></li>
+                    <li><a href="#">Salads & Museli</a></li>
+                    <li><a href="#">Desserts</a></li>
+                </div>
+                <hr/>
+            </div>
+
+            <div id="menuDropDown2">
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <img src="pattern_stars.png" alt="starsPattern"/>
+            </div>
+        </div>
+
+        <!-- ----------- CoffeeHouse DropDown Starts-------  -->
+
+        
+        <div class="container-fluid" id="coffeeHouseDropDown" onmousemove="mouseOverCoffeeHouse()" onmouseout="mouseOutCoffeeHouse()">
+            <div id="coffeeHouseDropDown1">
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Wireless Internet</a></li>
+                </div> 
+
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Store Locations</a></li>
+                </div> 
+
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Store Design</a></li>
+                    <li><a href="#">Fort-Mumbai</a></li>
+                    <li><a href="#">Indiranagar Bangalore</a></li>
+                    <li><a href="#">Koregaon Park Pune</a></li>
+                    <li><a href="#">Hamilton House Delhi</a></li>
+                    <li><a href="#">Jubiliee Hills Hydreabad</a></li>
+                    <li><a href="#">Phoenix Market City Chennai</a></li>
+                    <li><a href="#">Park Mansions Kolkata</a></li>
+                </div>  
+                <hr/>
+            </div>
+
+            <div id="coffeeHouseDropDown2">
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <a href="#" id="downloadApp">
+                    <div id="starbucksApp">
+                        <img src="starbucksapp.png" alt="promomobile"/>
+                        <h6>Starbucks® India Mobile App</h6>
+                        <p>Scan, Pay and earn rewards. It's that simple. Get our mobile app today!</p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- --------- Responsibility DropDown Starst------- -->
+
+        <div class="container-fluid" id="responsibilityDropDown" onmousemove="mouseOverResponsibility()" onmouseout="mouseOutResponsibility()">
+            <div id="responsibilityDropDown1">
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Community</a></li>
+                    <li><a href="#">Local Area Management</a></li>
+                    <li><a href="#">Empowering Girls And Young Women</a></li>
+                    <li><a href="#">Swastha</a></li>
+                    <li><a href="#">Chai Project</a></li>
+                </div>
+
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Ethical Sourcing</a></li>
+                    <li><a href="#">Coffee Sourcing</a></li>
+                    <li><a href="#">Farmer Support</a></li>
+                    <li><a href="#">Tea Sourcing</a></li>
+                    <li><a href="#">Cocoa Sourcing</a></li>
+                </div>    
+                
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Environment</a></li>
+                    <li><a href="#">Recycling</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Water</a></li>
+                    <li><a href="#">Green Building</a></li>
+                    <li><a href="#">Climate Change</a></li>
+                </div>
+
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Diversity</a></li>
+                </div>
+    
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Learn More</a></li>
+                    <li><a href="#">Starbucks Shared Planet</a></li>
+                    <li><a href="#">Policies</a></li>
+                </div>
+                <hr/>
+            </div>
+
+            <div id="responsibilityDropDown2">
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <img src="pattern_stars.png" alt="starsPattern"/>
+                <img src="pattern_stars.png" alt="starsPattern"/>
+            </div>
+        </div>
+
+        <!-- -------------About DropDown Starts-------- -->
+
+        <div class="container-fluid" id="aboutUsDropDown" onmousemove="mouseOverAboutUs()" onmouseout="mouseOutAboutUs()">
+            <div id="aboutUsDropDown1">
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Our Heritage</a></li>
+                </div> 
+
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Our Company</a></li>
+                    <li><a href="#">Mission Statement</a></li>
+                    <li><a href="#">Business Ethics And Compliance</a></li>
+                    <li><a href="#">Online Policies</a></li>
+                </div>  
+                
+                <div class="list-unstyled">
+                    <li><a href="#" id="menuHeading">Career Center</a></li>
+                </div> 
+                 <hr>
+            </div>
+
+            <div id="aboutUsDropDown2">
+                <img src="pattern_stars.png" alt="starsPattern"/>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- -------- Imagediv Starts--------- -->
+    
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="box10"></div>
+    <div id="box11">
+        <div class="left-box">
+            <img class="box-img"src="box11.png" alt="">
+        </div>
+        <div class="right-box">
+            <h3 class="right-heading">LET US DELIGHT YOU</h3>
+            <p class="right-para">
+                <em> Delicious, handcrafted beverages and great-tasting food. <p class="right-para">The secret to making life better.</p></em>
+            </p>
+            </div>
+    </div>
+    <div id="box12">
+        <div class="left-box">
+            <h3 class="left-heading">OPPORTUNITY</h3>
+            <p class="left-para">
+                <em>To be more than an employee, to be a partner.</em>
+            </p>
+        
+        </div>
+        <div class="right-box">
+            <img class="box-img" src="box12.png" alt="">
+        </div>
+    </div>
+
+    <!-- ------- Footer Starts--------- -->
+    
+    <footer>
+        <div class="footer-top">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="footer-middle">
+            <ul class="footer-links">
+                <li class="heading"> About us</li>
+                <li class="sub-heading">Our Heritage</li>
+                <li class="sub-heading">Our Company</li>
+            </ul>
+            <ul class="footer-links">
+                <li class="heading"> Customer Services</li>
+                <li class="sub-heading">Frequently Asked</li>
+            </ul>
+            <ul class="footer-links">
+                <li class="heading">Quick Links</li>
+                <li class="sub-heading">Store Locator</li>
+            </ul>
+        </div>
+        <div id="footer-bottom">
+            <a class="footer-links2" href="#">Web Accessibility |</a>
+            <a class="footer-links2" href="#">Privacy Statement |</a>
+            <a class="footer-links2" href="#">Terms of Use |</a>
+            <a class="footer-links2" href="#">Site Map |</a>
+            <a class="footer-links2" href="#">Contact Us |</a>
+            <a class="footer-links2" href="#">Cookie Preferences</a>
+            
+            <div id="footer-bottom2">
+                <p>&copy; 2019 Starbucks Coffee Company. All rights reserved</p>
+            </div>
+        </div>
+
+        <div id="footer-img">
+            <img src="starbucks.png" alt="">
+        </div>
+    </footer>
+ 
+
+</body>
+</html>
