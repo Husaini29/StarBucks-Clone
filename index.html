@@ -15,6 +15,14 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div class="mode" data-mode ="light" onclick="darkmode()">
+        <span class="fas fa-moon"></span>
+    </div>
+
+    <div id="coupon">
+        <img src="coupon.jpg" alt="">
+        <button class="btn" onclick="closeCoupon()"> &times; </button>
+    </div>
     <header id="header">
         <div class="head"></div>
         <nav class="navbar">
@@ -331,6 +339,9 @@
         </div>
     </footer>
  
+    <script>
+        window.onload = loadCoupon();
+    </script>
 
 </body>
 </html>

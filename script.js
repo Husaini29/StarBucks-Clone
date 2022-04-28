@@ -37,3 +37,14 @@ function mouseOverAboutUs(){
 function mouseOutAboutUs(){
     document.getElementById('aboutUsDropDown').style.visibility="hidden"
 }
+function loadCoupon(){
+    document.getElementById('coupon').style.visibility="visible"
+}
+function closeCoupon(){
+    document.getElementById('coupon').style.visibility="hidden"
+}
+
+function darkmode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}

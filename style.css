@@ -4,17 +4,68 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    box-sizing: border-box;
-    font-family:'Lato',Helvetica,Arial,sans-serif;
-
-}
 :root{
     --color-primary:#006241;
     --color-secondary:#d50032;
     --color-extra:#d4e9e2;
 }
+body{
+    box-sizing: border-box;
+    font-family:'Lato',Helvetica,Arial,sans-serif;
+}
 
+/* -------------Dark Mode Css--------- */
+.mode{
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    z-index: 100;
+}
+.mode:hover{
+    cursor: pointer;
+}
+
+.mode span{
+    color:#fff;
+    font-size: 22px;
+}
+
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+}
+
+/* --------------Coupon Starts ----------- */
+
+#coupon{
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+}
+#coupon > img{
+    height: 320px;
+    width: 500px;
+    margin-top: 33%;
+    margin-left: 95%;
+}
+.btn{
+    height: 30px;
+    width: -1px;
+    margin-top: 34%;
+    margin-left: -7%;
+    background: #969494;
+    color: white;
+    z-index: 100;
+}
 /* ----------Header Starts -------- */
 #header{
     height: 190px;
@@ -47,6 +98,7 @@ body{
 }
 .nav-options{
     display: flex;
+    color: #000;
 }
 .nav-options > li{
     list-style: none;
@@ -67,6 +119,9 @@ body{
 }
 .fa-location-dot{
     color: var(--color-primary);
+}
+.find{
+    color:#000;
 }
 .find:hover{
     color: #a1a1a1;
