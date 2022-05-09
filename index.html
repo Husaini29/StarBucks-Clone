@@ -15,14 +15,25 @@
     <script src="script.js"></script>
 </head>
 <body>
+
+    <!-- ----- Dark Mode Starts---------- -->
     <div class="mode" data-mode ="light" onclick="darkmode()">
         <span class="fas fa-moon"></span>
     </div>
 
+    <!-- -----------Coupon Starts---------- -->
     <div id="coupon">
         <img src="coupon.jpg" alt="">
         <button class="btn" onclick="closeCoupon()"> &times; </button>
     </div>
+
+    <!-- ------------Weather Starts------- -->
+    <div class="icon">
+        <img class="card-img-top" src="https://openweathermap.org/img/w/01d.png" alt="weather">
+        <p id="weather"></p>
+    </div>
+
+    <!-- ---------- Header Starts------- -->
     <header id="header">
         <div class="head"></div>
         <nav class="navbar">

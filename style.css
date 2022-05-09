@@ -127,6 +127,29 @@ body{
     color: #a1a1a1;
     cursor: pointer;
 }
+
+
+/* ----------Weather CSS---------- */
+
+.icon{
+    z-index: 100;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 2%;
+}
+
+.card-img-top{
+    display: inline-block;
+}
+
+#weather{
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 1.7rem;
+
+}
+
+
 /* -------Hoverable DropDown Starts------ */
 
 /* ------CoffeeDropDown Starts------- */
